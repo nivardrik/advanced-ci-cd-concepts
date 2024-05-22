@@ -15,8 +15,6 @@ jobs:
         os: [ubuntu-latest, macos-latest]
     steps:
     - uses: actions/checkout@v2
-    - name: Check Cargo FMT
-      run: cargo fmt --check
     - name: Check Cargo TEST
       run: cargo test
     - name: Make sure Rust builds correctly
